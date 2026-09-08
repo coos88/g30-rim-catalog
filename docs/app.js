@@ -236,7 +236,7 @@ const grid=document.getElementById("grid");
 function pageSubset(){
   if(PAGE==="g30") return WHEELS.filter(hasG30Photo);
   if(PAGE==="more") return WHEELS.filter(w=>!hasG30Photo(w));
-  return WHEELS;
+  return [...WHEELS].sort((a,b)=>hasG30Photo(b)-hasG30Photo(a));
 }
 
 function photoBlock(w){
