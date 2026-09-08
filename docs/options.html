@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G30 Twenties — More Options</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="more">
+
+<header class="hero">
+  <div class="hero-inner">
+    <nav class="pagenav" aria-label="Catalog pages">
+      <a href="index.html">Seen on a G30</a>
+      <a href="options.html" aria-current="page">More options</a>
+    </nav>
+    <p class="eyebrow">BMW 5 Series &middot; G30 / G31 &middot; 5&times;112 &middot; NL edition</p>
+    <h1>More Options</h1>
+    <p class="lede">Sets that fit the G30 just as well, but that we haven't caught on camera on a 5&nbsp;Series yet —
+    where a real 20-inch photo on another car exists, it's linked on the card. The renders below are drawn to each
+    design's actual spoke pattern, and <em>Fit on car</em> previews any of them on the G30 profile.
+    <a href="index.html">Back to the sets with G30 photos</a>.</p>
+    <div class="carwrap">
+      <canvas id="car" width="1040" height="380" aria-label="Side profile of a BMW G30 5 Series showing the selected wheel design"></canvas>
+      <p class="fitted"><span>Now fitted:</span> <strong id="fitted-name">BMW 668 M — Jet Black</strong>
+      <span class="tip">choose a set below to swap wheels</span></p>
+    </div>
+  </div>
+</header>
+
+<nav class="filters" aria-label="Catalog filters">
+  <div class="filters-inner">
+    <div class="chiprow" id="style-chips" role="group" aria-label="Filter by style">
+      <span class="lbl">Style</span>
+    </div>
+    <div class="chiprow" id="budget-chips" role="group" aria-label="Filter by budget">
+      <span class="lbl">Budget</span>
+    </div>
+    <div class="meta-row">
+      <span class="count" id="count"></span>
+      <div class="sortwrap">
+        <input type="search" id="search" placeholder="Search brand or model…" aria-label="Search brand or model">
+        <label class="sortwrap">Sort
+          <select id="sort">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: low &rarr; high</option>
+            <option value="price-desc">Price: high &rarr; low</option>
+            <option value="name">Brand A&ndash;Z</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>No sets match these filters — loosen the budget or style.</div>
+</main>
+
+<p class="disclaimer">Price indications are for a set of four wheels including 21% VAT, excluding tires and mounting,
+based on EU/NL retail early 2026. Wheel drawings are stylized renderings of each design; the <em>Real photos</em>
+links open galleries with actual photography. Fitment and APK notes are on the
+<a href="index.html">main page</a>. Always run the seller's fitment check for your exact build before ordering.</p>
+
+<script src="wheels-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
