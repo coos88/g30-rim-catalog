@@ -1,7 +1,7 @@
 /* G30 Twenties catalog data.
-   One object per wheel set. `photo` is a real-life shot: {src, creditUrl, creditName,
-   car, isG30, size} or null (card then shows the canvas rendering only).
-   `render` drives the programmatic wheel drawing in app.js. */
+   One object per wheel set. `photo` is a real-life shot of the wheel mounted on a car:
+   {src, creditUrl, creditName, car, isG30, size} or null (card then shows a "no photo yet" stage).
+   `photoLinks` are pages with more real photos; any isG30:true photo or link puts the set on index.html. */
 
 window.WHEELS = [
   {
@@ -14,7 +14,6 @@ window.WHEELS = [
     blurb:"German budget brand with real paperwork. A clean five-arm Y design that reads far more expensive than it is; the entry ticket to twenties without certification headaches.",
     finishes:[{name:"Palladium",face:"#b7bcc4"},{name:"Black Painted",face:"#23262b"}],
     url:"https://mam.de",
-    render:{style:"y",count:5,width:.62,concave:.18,lip:"metal"},
     photo:null,
     photoLinks:[{"url": "https://www.alufelgenshop.at/mam-rs4-matt-silver-painted-19-zoll-mamrs48519510845msl/bmw-5er-g30-limousine-g5l-m550i-xdrive-alufelgen/4-4l-340kw-462-ps/", "label": "RS4 on a G30 (19″ shown, same design)", "isG30":false}, {"url": "https://www.reifen.com/de-de/auto/felgen/marken/mam/rs4", "label": "reifen.com — RS4 mounted photos", "isG30":false}]
   },
@@ -28,7 +27,6 @@ window.WHEELS = [
     blurb:"The modern mesh. A tight lattice with a machined face that nods to nineties BBS without the four-figure entry fee. Loves a gloss black G30.",
     finishes:[{name:"Silver Machined",face:"#c3c8cf"},{name:"Gloss Black",face:"#1f2126"}],
     url:"https://rotiform.com",
-    render:{style:"mesh",count:9,width:.30,concave:.22,lip:"bright"},
     photo:{src:"https://s7d9.scene7.com/is/image/wheelpros/rotiform-r183-las-r-gloss%20silver-19x10-2013%20vw%20passat%2012?$1200x$&aemtype=image", creditUrl:"https://www.rotiform.com/rotiform-las-r", creditName:"Rotiform LAS-R product page", car:"Volkswagen Passat", isG30:false, size:"19″"},
     photoLinks:[{"url": "https://www.fitmentindustries.com/brands/wheels/Rotiform/LAS-R/20x10", "label": "20×10 LAS-R mounted gallery", "isG30":false}, {url:"https://www.rotiform.com/rotiform-las-r",label:"Rotiform official LAS-R page (mounted gallery shots)",isG30:false}]
   },
@@ -42,7 +40,6 @@ window.WHEELS = [
     blurb:"The value king of the concave scene. Twin-five spokes that dive hard into the barrel, a size matrix that covers every G30 stance, and hub rings in the box.",
     finishes:[{name:"Hyper Grey",face:"#7d8590"},{name:"Matt Bronze",face:"#9c7440"},{name:"Black Brushed",face:"#2b2e33"}],
     url:"https://japanracing.jp",
-    render:{style:"twin",count:5,width:.66,curve:.05,concave:.55,lip:"metal"},
     photo:{src:"https://jr-wheels.com/zdjecia/2023/09/06/1109/16/Q177610.jpg", creditUrl:"https://jr-wheels.com/vehicle-gallery/1776", creditName:"JR Wheels vehicle gallery", car:"BMW X6 M", isG30:false, size:"22″"},
     photoLinks:[{"url": "https://jr-wheels.com/category/jr38", "label": "JR official JR38 gallery", "isG30":false}, {"url": "https://jr-wheels.com/vehicle-gallery", "label": "JR vehicle gallery (filter JR38)", "isG30":false}]
   },
@@ -56,7 +53,6 @@ window.WHEELS = [
     blurb:"Slim twin-five V-spokes with a jewelry-grade Carbon Bronze finish. The quiet-luxury take on concave — dressy on a Sophisto Grey or Carbon Black G30.",
     finishes:[{name:"Carbon Bronze",face:"#8a6a45"},{name:"Corsa Silver",face:"#bfc4cb"}],
     url:"https://ispiriwheels.com",
-    render:{style:"twin",count:5,width:.52,curve:.06,concave:.45,lip:"metal"},
     photo:{src:"https://www.premiumfelgi.com/public/assets/Blog/BMW_M3_F80_Ispiri_FFR6/BMW_M3_F80_Ispiri_FFR6_wheels_rims_felgi_01.jpg", creditUrl:"https://www.premiumfelgi.com/bmw-m3-ispiri-ffr6-20", creditName:"PremiumFelgi.pl (photo: Tomek Sarna)", car:"BMW M3 F80", isG30:false, size:"20″"},
     photoLinks:[{"url": "https://www.premiumfelgi.com/bmw-m3-ispiri-ffr6-20", "label": "20″ FFR6 on BMW M3", "isG30":false}, {"url": "https://www.premiumfelgi.com/audi-rs5-ispiri-ffr6-20", "label": "20″ FFR6 on Audi RS5", "isG30":false}]
   },
@@ -70,7 +66,6 @@ window.WHEELS = [
     blurb:"Deep-concave double spokes from a German shop that built its name on BMWs. Aggressive stance with paperwork to match — rare at this price.",
     finishes:[{name:"Gloss Metal",face:"#a9aeb6"},{name:"Gloss Black",face:"#1f2126"}],
     url:"https://z-performance.com",
-    render:{style:"twin",count:5,width:.58,curve:-.05,concave:.6,lip:"dark"},
     photo:{src:"https://zperformance.b-cdn.net/gallery-images/126/1.webp", creditUrl:"https://z-performance.com/gallery/126", creditName:"Z-Performance gallery", car:"BMW M4 F82", isG30:false, size:"20″"},
     photoLinks:[{"url": "https://wheelfront.com/cars/2017-bmw-m2-f87-blue-z-performance-zp2-1/", "label": "ZP2.1 on BMW M2", "isG30":false}, {"url": "https://www.premiumfelgi.pl/pl/p/Z-Performance-ZP2.1-dla-BMW-5-G30G31/66820", "label": "ZP2.1 G30/G31 product page", "isG30":false}]
   },
@@ -84,7 +79,6 @@ window.WHEELS = [
     blurb:"The factory M Performance twenty. Jet Black double spokes, zero paperwork and resale value that holds. The baseline every set below has to beat.",
     finishes:[{name:"Jet Black",face:"#212327"},{name:"Cerium Grey",face:"#847a6d"}],
     url:"https://www.bmw.nl",
-    render:{style:"double",count:10,width:.44,concave:.25,lip:"dark"},
     photo:{src:"https://mediapool.bmwgroup.com/cache/P9/201704/P90255000/P90255000-the-new-bmw-m550i-xdrive-04-2017-2249px.jpg", creditUrl:"https://www.press.bmwgroup.com/global/photo/detail/P90255000/the-new-bmw-m550i-xdrive-04/2017", creditName:"BMW Group PressClub", car:"BMW M550i xDrive G30", isG30:true, size:"20″"},
     photoLinks:[{"url": "https://g30.bimmerpost.com/forums/showthread/2190019/style-668m-wheel-set-20-quot-g30-m550xi", "label": "G30 forum — 668M 20″ on M550i", "isG30":true}, {"url": "https://www.netcarshow.com/bmw/2018-m550i_xdrive/", "label": "Press gallery — M550i on 20″ 668M", "isG30":true}]
   },
@@ -98,7 +92,6 @@ window.WHEELS = [
     blurb:"The G30 crowd favourite. A meshed Y-spoke pattern that pulls deep into the barrel, made to order with your exact offset. Brushed Bronze on grey paint is the scene's signature look.",
     finishes:[{name:"Brushed Bronze",face:"#a5794a"},{name:"Platinum Grey",face:"#8b929c"},{name:"Double Tinted Black",face:"#26282d"}],
     url:"https://concaverwheels.com/cvr1",
-    render:{style:"mesh",count:10,width:.34,concave:.55,lip:"metal"},
     photo:{src:"https://concaverwheels.com/upload/gallery_phpPj7mEW1597061700.jpg", creditUrl:"https://concaverwheels.com/gallery/312", creditName:"Concaver gallery", car:"BMW M550i G30", isG30:true, size:"20″"},
     photoLinks:[{"url": "https://concaverwheels.com/gallery/312", "label": "Concaver gallery — 5 Series on CVR1 20″", "isG30":true}, {"url": "https://concaverwheels.com/vehicle_gallery", "label": "Concaver vehicle gallery (filter BMW 5)", "isG30":false}]
   },
@@ -112,7 +105,6 @@ window.WHEELS = [
     blurb:"Five fat twin-spokes, milled and shadow-lined. The wheel you see on half the tuned Bimmers at Dutch and German meets — bold without going full stance.",
     finishes:[{name:"Shiny Black",face:"#232529"},{name:"Palladium Grey",face:"#8e959f"}],
     url:"https://mbdesign.de",
-    render:{style:"twin",count:5,width:.74,curve:.04,concave:.5,lip:"dark"},
     photo:{src:"https://r2.mbdesign.shop/media/83/a5/46/1581702351/IMG_0952.jpg", creditUrl:"https://mbdesign.shop/galerie/kv1-grau-glaenzend-poliert/146/bmw-5er-g5l", creditName:"mbDESIGN gallery", car:"BMW 5 Series G30", isG30:true, size:"20″"},
     photoLinks:[{"url": "https://mbdesign.shop/galerie/kv1-grau-glaenzend-poliert/146/bmw-5er-g5l", "label": "mbDESIGN gallery — G30 on KV1 20″ grey", "isG30":true}, {"url": "https://mbdesign.shop/en/gallery/kv1-bronze-light-matt/1034/bmw-5er-touring-g5k", "label": "G31 Touring on KV1 20″ bronze", "isG30":true}]
   },
@@ -126,7 +118,6 @@ window.WHEELS = [
     blurb:"Ten featherweight spokes and genuine motorsport DNA. Around a kilo and a half lighter per corner than most cast twenties — steering feel you can actually sense. Race Gold if you're brave.",
     finishes:[{name:"Race Gold",face:"#b08a3c"},{name:"Matt Black",face:"#26282c"},{name:"Crystal Titanium",face:"#9aa0a9"}],
     url:"https://ozracing.com",
-    render:{style:"twin",count:5,width:.44,concave:.3,lip:"bright"},
     photo:{src:"https://wheelfront.com/wp-content/uploads/formidable/8/BMW_Z4__Oz_Racing_Ultraleggera_HLT_20_gallery_9.jpeg", creditUrl:"https://wheelfront.com/aftermarket-wheels-gallery/?fmake=BMW&fmodel=Z4&fseries=E89&fwheel=OZ&fwheelmodel=Ultraleggera%20HLT", creditName:"Wheelfront", car:"BMW Z4 E89", isG30:false, size:"20″"},
     photoLinks:[{url:"https://wheelfront.com/aftermarket-wheels-gallery/?fmake=BMW&fmodel=Z4&fseries=E89&fwheel=OZ&fwheelmodel=Ultraleggera%20HLT",label:"20″ Ultraleggera HLT on BMW Z4 (Wheelfront)",isG30:false}, {"url": "https://wheelfront.com/cars/bmw-5-series-530i-g30-black-with-oz-leggera-hlt-aftermarket-wheels/", "label": "G30 on sister Leggera HLT (19″)", "isG30":false}]
   },
@@ -140,7 +131,6 @@ window.WHEELS = [
     blurb:"A BMW-specialist house style: ten slim Y-spokes that fork toward the rim edge, in matt gunmetal. Looks like it could have left Dingolfing on the car — exactly the point.",
     finishes:[{name:"Matt Gunmetal",face:"#5f666f"},{name:"Hyper Black",face:"#2a2d33"}],
     url:"https://breyton.com",
-    render:{style:"y",count:10,width:.4,concave:.3,lip:"dark"},
     photo:{src:"https://wheelfront.com/wp-content/uploads/2024/04/54255526_2392140157471679_8733869460168900608_o.jpg", creditUrl:"https://wheelfront.com/cars/bmw-x6-f16-black-breyton-fascinate/", creditName:"Wheelfront", car:"BMW X6 F16", isG30:false, size:""},
     photoLinks:[{"url": "https://breyton.com/wheels/fascinate", "label": "Breyton official — Fascinate gallery", "isG30":false}, {"url": "https://breyton.com/news/detail/breyton-fascinate", "label": "Fascinate launch photos", "isG30":false}]
   },
@@ -154,7 +144,6 @@ window.WHEELS = [
     blurb:"AC Schnitzer\u2019s reinterpretation of the classic twin-spoke: five split spokes that taper to the rim edge around the pentagonal hub cap, in bi-color or full anthracite. Instant Aachen pedigree on any G30.",
     finishes:[{name:"Bi-color Silver",face:"#c0c5cc"},{name:"Anthracite",face:"#4a4f57"}],
     url:"https://ac-schnitzer.de",
-    render:{style:"twin",count:5,width:.6,curve:0,concave:.3,lip:"bright"},
     photo:{src:"https://mirbmw.ru/wp-content/uploads/2021/03/ac-schnitzer-bmw-5-g30-g31-lci-04.jpg", creditUrl:"https://mirbmw.ru/bmw-5-series-g30-g31-lci-schnitzer/", creditName:"AC Schnitzer press photo via mirbmw.ru", car:"BMW 5 Series G30 LCI (AC Schnitzer)", isG30:true, size:""},
     photoLinks:[{url:"https://www.ac-schnitzer.de/en/bmw/8-1/5/5er-g30g31/wheels/",label:"AC Schnitzer official — G30/G31 wheel program (AC1 on car)",isG30:true}, {url:"https://www.acschnitzer-us.com/ac-schnitzer-wheel-type-ac1-anthracite-for-bmw-5-series-g30-g31/p2833",label:"AC Schnitzer USA — AC1 Anthracite for G30/G31",isG30:true}]
   },
@@ -168,7 +157,6 @@ window.WHEELS = [
     blurb:"The Nürburgring paddock default. Ten Y-spokes, a bolted stainless rim protector against curbs, and the three letters that settle any wheel argument.",
     finishes:[{name:"Platinum Grey",face:"#8f959e"},{name:"Black Dinamica",face:"#232529"}],
     url:"https://bbs.com",
-    render:{style:"y",count:10,width:.4,concave:.3,lip:"bright"},
     photo:{src:"https://www.bbs.com/en/static/version1782818341/frontend/Fwd/fwd-bbs-en-theme/en_US/Fwd_CmsPages/images/static/gallery/radgalerie/BMW_M3_CS_Touring_G81_CH_R/BMW_M3_CSL_G80_BBS_Unlimited_CH-RII_Bronze_Bild01.webp", creditUrl:"https://www.bbs.com/en/gallery-bmw-m3-cs-g80-ch-r", creditName:"BBS official gallery", car:"BMW M3 CS G80", isG30:false, size:"20″ / 21″"},
     photoLinks:[{"url": "https://wheelfront.com/aftermarket-wheels-gallery/?fmake=Audi&fmodel=RS5&fseries=B9&fwheel=BBS&fwheelmodel=CH-R+II", "label": "20″ CH-R II on Audi RS5", "isG30":false}, {"url": "https://baanvelgen.com/products/bbs-ch-r-ii-2-satin-black-20-inch-bmw-audi-porsche", "label": "Baan Velgen (NL) — CH-R II 20″", "isG30":false}]
   },
@@ -182,7 +170,6 @@ window.WHEELS = [
     blurb:"Ten knife-edge V-spokes stretched to the rim, flow-formed for weight. The CI-R is what the CH-R wears to a board meeting — motorsport bones, executive tailoring.",
     finishes:[{name:"Platinum Silver",face:"#b9bec6"},{name:"Night Fog",face:"#3a3e45"}],
     url:"https://bbs.com",
-    render:{style:"multi",count:10,width:.42,concave:.35,lip:"bright"},
     photo:{src:"https://baanvelgen.com/cdn/shop/products/bmw-g30-bbs-ci-r-20-inch-platinum-silver.jpg?v=1671463470", creditUrl:"https://baanvelgen.com/products/bbs-ci-r-bmw-5series-g30-20-inch-satin-black", creditName:"Baan Velgen", car:"BMW 5 Series G30 (530e)", isG30:true, size:"20″"},
     photoLinks:[{"url": "https://g30.bimmerpost.com/forums/showthread.php?t=1844556", "label": "G30 forum — 540i on CI-R", "isG30":true}, {"url": "https://wheelfront.com/cars/bmw-5-series-530e-g30-grey-bbs-ci-r/", "label": "Grey 530e G30 on CI-R", "isG30":true}, {"url": "https://baanvelgen.com/products/bbs-ci-r-bmw-5series-g30-20-inch-satin-black", "label": "Baan Velgen (NL) — CI-R 20″ for G30", "isG30":true}]
   },
@@ -196,7 +183,6 @@ window.WHEELS = [
     blurb:"Ten spokes twisting clockwise into a deep bowl — the directional design that made the HF line a phenomenon. Pure Miami on a Dutch executive sedan, in the best way.",
     finishes:[{name:"Tinted Gloss Black",face:"#2b2d33"},{name:"Anthracite",face:"#565c65"},{name:"Silver Metallic",face:"#b4bac2"}],
     url:"https://vossenwheels.com",
-    render:{style:"directional",count:10,width:.4,curve:.14,concave:.55,lip:"dark"},
     photo:{src:"https://wheelfront.com/wp-content/uploads/formidable/8/bmw-m550d-g30-with-bronze-vossen-hf3-wheels-1-1.jpg", creditUrl:"https://wheelfront.com/aftermarket-wheels-gallery/?fmake=BMW&fmodel=5%20Series&fseries=G30&fwheel=Vossen&fwheelmodel=HF-3", creditName:"Wheelfront", car:"BMW M550d G30", isG30:true, size:""},
     photoLinks:[{"url": "https://vossenwheels.com/galleries/bmw-m3-hybrid-forged-series-hf-3/", "label": "Vossen gallery — 20″ HF-3 on BMW M3", "isG30":false}, {"url": "https://www.vibemotorsports.com/products/20-vossen-hf3-grey-20x8-5-20x10-1389-concave-wheels-rims-fits-bmw-g30-520-530-5-voshf351577-1389", "label": "20″ HF-3 set in G30 fitment", "isG30":false}]
   },
@@ -210,7 +196,6 @@ window.WHEELS = [
     blurb:"Ten hairline spokes in Liquid Metal, engineered by the brand supercars wear from the factory. The most weight-efficient and most expensive way to fill a G30 arch on this page.",
     finishes:[{name:"Liquid Metal",face:"#c9ccd2"},{name:"Tarmac",face:"#33363c"}],
     url:"https://hrewheels.com",
-    render:{style:"multi",count:10,width:.3,concave:.4,lip:"metal"},
     photo:{src:"https://s3.amazonaws.com/cdn.hrewheels.com/img/gallery-original/75f49651429345b25bbfdd307e87e8cf.jpg", creditUrl:"https://www.hrewheels.com/gallery/bmw-g30-530i-with-flowform-ff10-in-tarmac/1", creditName:"HRE Performance Wheels gallery", car:"BMW 530i G30", isG30:true, size:""},
     photoLinks:[{"url": "https://www.hrewheels.com/gallery/bmw-g30-530i-with-flowform-ff10-in-tarmac/1", "label": "HRE gallery — G30 530i on FF10 Tarmac", "isG30":true}, {"url": "https://g30.bimmerpost.com/forums/showthread/1908929/hre-ff10-20-34", "label": "G30 forum — FF10 20″ build", "isG30":true}]
   },
@@ -224,7 +209,6 @@ window.WHEELS = [
     blurb:"Split five-spoke with a carbon-look deep center from Berlin. Sits between the budget concaves and the premium names — sharp design, honest weight, real paperwork.",
     finishes:[{name:"Deep Black",face:"#222429"},{name:"Frozen Silver",face:"#9fa5ae"}],
     url:"https://wheelforce.de",
-    render:{style:"twin",count:5,width:.6,curve:.08,concave:.5,lip:"metal"},
     photo:{src:"https://www.premiumfelgi.com/public/assets/Blog/BMW_3_G20_Wheelforce_CF-2-FF/BMW_3_G20_Wheelsforce_CF-2-FF_wheels_rims_felgi_01.jpg", creditUrl:"https://www.premiumfelgi.com/bmw-3-wheelforce-cf_2-ff-20", creditName:"PremiumFelgi.com", car:"BMW 3 Series G20", isG30:false, size:"20″"},
     photoLinks:[{"url": "https://wheelfront.com/cars/bmw-m2-competition-f87-blue-wheelforce-cf2-ff/", "label": "20″ CF.2-FF on M2 Competition", "isG30":false}, {"url": "https://wheelforce.de/cf2-ff_1", "label": "Wheelforce official gallery", "isG30":false}]
   },
@@ -240,7 +224,6 @@ window.WHEELS = [
     blurb:"A tight Y-mesh that flows out over the rim edge for a full-face look — the mesh alternative to its concave JR38 stablemate, at an even friendlier price.",
     finishes:[{name:"Hyper Black",face:"#3d3f42"},{name:"Silver Machined",face:"#c9ccd0"},{name:"Gloss Black Machined",face:"#1a1b1d"}],
     url:"https://japanracing.jp",
-    render:{style:"mesh",count:10,width:.3,concave:.3,lip:"metal"},
     photo:{src:"https://live.staticflickr.com/4855/44397668820_462b75eb3e_b.jpg", creditUrl:"https://www.flickr.com/photos/jrwheels/44397668820", creditName:"JR Wheels (Flickr)", car:"BMW 5 Series G30 (M Sport)", isG30:true, size:"20″"},
     photoLinks:[{url:"https://www.flickr.com/photos/jrwheels/44397668820",label:"Official JR shot — G30 on JR28 20\"",isG30:true}]
   },
@@ -254,7 +237,6 @@ window.WHEELS = [
     blurb:"Aggressive split five-spoke with a genuinely deep dish on the wide rears. The budget route to the look the premium concave brands charge double for.",
     finishes:[{name:"Hyper Grey",face:"#8f9296"},{name:"Matt Bronze",face:"#9c7c4f"},{name:"Gloss Black",face:"#101113"}],
     url:"https://japanracing.jp",
-    render:{style:"double",count:5,width:.6,curve:.05,concave:.55,lip:"metal"},
     photo:{src:"https://live.staticflickr.com/4824/32342706858_5c96686f28_b.jpg", creditUrl:"https://www.flickr.com/photos/jrwheels/32342706858", creditName:"JR Wheels (Flickr)", car:"BMW 5 Series G30 (M Sport)", isG30:true, size:"20″"},
     photoLinks:[{url:"https://www.flickr.com/photos/jrwheels/32342706858",label:"Official JR shot — G30 on JR30 20\"",isG30:true}]
   },
@@ -268,7 +250,6 @@ window.WHEELS = [
     blurb:"Flowforged five twin-spoke with hand-brushed faces that shift in the light. Serious width (10.5J rear) with serious paperwork — an underrated German pick.",
     finishes:[{name:"Titan Brush",face:"#8f8a80"},{name:"Silver Brush",face:"#c4c6c8"},{name:"Black",face:"#121314"}],
     url:"https://www.oxigin.de",
-    render:{style:"twin",count:5,width:.56,curve:.05,concave:.45,lip:"metal"},
     photo:null,
     photoLinks:[{url:"https://www.oxigin.de/fahrzeugfotos/",label:"Oxigin gallery — customer vehicle photos",isG30:false}]
   },
@@ -282,7 +263,6 @@ window.WHEELS = [
     blurb:"Five slim twin-spoke pairs reaching a stepped rim edge, from the company that casts wheels for the factories. Not the lightest, but bulletproof paperwork and a Gold Matt option for the brave.",
     finishes:[{name:"Black Rim Polished",face:"#1c1d1f"},{name:"Titan Glossy",face:"#7f8286"},{name:"Gold Matt",face:"#a8863c"}],
     url:"https://www.borbet.de",
-    render:{style:"twin",count:5,width:.46,concave:.3,lip:"dark"},
     photo:{src:"https://www.borbet.de/medien/img/felgen/borbet-gtx-black-matt-rim-red/CatGalarie/borbet_gtx_bmrs_vw-arteon_wheels_7807_500_500.webp", creditUrl:"https://www.borbet.de/felgen/borbet-gtx-black-matt-rim-red", creditName:"Borbet official product gallery", car:"Volkswagen Arteon", isG30:false, size:"19″"},
     photoLinks:[{url:"https://www.borbet.de",label:"Borbet GTX product gallery",isG30:false}]
   },
@@ -296,7 +276,6 @@ window.WHEELS = [
     blurb:"A double cross-spoke mesh with a compact hub that makes the wheel read even larger than twenty. Elegant OE-plus style in a square setup — the executive look, not the stance look.",
     finishes:[{name:"Gunmetal Polished",face:"#5a5e63"},{name:"Gloss Black Polished",face:"#1a1c1e"}],
     url:"https://www.aez-wheels.com",
-    render:{style:"mesh",count:10,width:.32,concave:.25,lip:"bright"},
     photo:{src:"https://www.aez-wheels.com/EN/repos/files/CommonData/NEWSROOM/News/Artikel2017/1716_AEZ_BMW_M5_AEZ_Crest_dark/AEZ-Crest-dark-BMW-5-matte-grey-Artikelbild-1", creditUrl:"https://www.aez-wheels.com/EN/newsroom/Articles2017/BMW-530d-on-AEZ-Crest-dark", creditName:"AEZ official newsroom", car:"BMW 530d G30", isG30:true, size:"20″"},
     photoLinks:[{url:"https://www.aez-wheels.com",label:"AEZ Crest gallery",isG30:false}]
   },
@@ -310,7 +289,6 @@ window.WHEELS = [
     blurb:"Ten delicate spokes engineered for weight — 11.5 kg even at 10.5J wide. Optional colored trim ring for a motorsport accent. The performance pick under €2.000.",
     finishes:[{name:"Matt Gunmetal",face:"#565a5e"},{name:"Silver Brushed",face:"#b9bcbf"},{name:"Black Brushed",face:"#232527"}],
     url:"https://www.barracuda-europe.de",
-    render:{style:"multi",count:10,width:.36,concave:.3,lip:"metal"},
     photo:{src:"https://www.barracuda-europe.de/wp-content/uploads/2023/03/BMW-5er-G30-Barracuda-Project-2.jpg", creditUrl:"https://www.barracuda-europe.de/barracuda-project-2-0-fuer-bmw-5er/", creditName:"Barracuda Racing Wheels (dealer: Cardiologie Tuning)", car:"BMW 5 Series G30", isG30:true, size:"21″"},
     photoLinks:[{url:"https://www.barracuda-europe.de/en/barracuda-project-2-0-fuer-bmw-5er/",label:"Barracuda official — Project 2.0 on a BMW 5er G30",isG30:true}]
   },
@@ -324,7 +302,6 @@ window.WHEELS = [
     blurb:"Five-star double-spoke with a kink in each spoke and a properly concave face. The budget answer to the German concave brands — half the price, same paperwork.",
     finishes:[{name:"Matt Black",face:"#1f2022"},{name:"Gunmetal Polished",face:"#606468"},{name:"Gloss Black",face:"#141517"}],
     url:"https://www.motec-wheels.de",
-    render:{style:"twin",count:5,width:.62,curve:-.04,concave:.5,lip:"dark"},
     photo:{src:"https://www.gt-automotive.com/bilder/popup/1600x1100/motec-mct7-xtreme-gunmetal-poliert-20-zoll-vw-bettle.jpg", creditUrl:"https://www.gt-automotive.com/tuning-news/motec-mct7-xtreme-gunmetal-poliert-20-zoll-vw-beetle_359.php", creditName:"GT-Automotive GmbH & Co. KG (press news)", car:"Volkswagen Beetle", isG30:false, size:"20″"},
     photoLinks:[{url:"https://www.onlineraeder.de/felgengalerie/MOTEC/MCT7%20XTREME%20MATTSCHWARZ/G_8.5_20",label:"Customer-car gallery — MCT7 20\"",isG30:false}]
   },
@@ -338,7 +315,6 @@ window.WHEELS = [
     blurb:"Y-split spokes of alternating lengths for a layered face, cast in Europe with a five-year warranty and a bore machined exactly for BMW. Rare honesty at this price.",
     finishes:[{name:"Gloss Black",face:"#101214"},{name:"Black Full-Polished",face:"#3a3d40"},{name:"Black Front-Polished",face:"#2b2e31"}],
     url:"https://www.brock.de",
-    render:{style:"y",count:10,width:.42,concave:.28,lip:"dark"},
     photo:{src:"https://www.brock.de/wp-content/uploads/2025/04/Volvo-XC60-Brock-B41-SGVP-20-Zoll.jpg", creditUrl:"https://www.brock.de/en/bmw-m5-sedan/", creditName:"Brock Alloy Wheels", car:"Volvo XC60", isG30:false, size:"20″"},
     photoLinks:[{url:"https://www.brock.de/en/bmw-m5-sedan/",label:"Brock gallery — BMW M5 sedan (2026 G9M shown)",isG30:false}]
   },
@@ -352,7 +328,6 @@ window.WHEELS = [
     blurb:"Sleek V-shaped double spokes with polished accents and an unpolished flange that makes the wheel read larger. The quiet, sensible twenty for a daily G30.",
     finishes:[{name:"Black Polished",face:"#26282b"},{name:"Titanium Silver",face:"#aeb1b5"}],
     url:"https://www.autec-wheels.de",
-    render:{style:"double",count:5,width:.5,curve:.04,concave:.25,lip:"bright"},
     photo:null,
     photoLinks:[{url:"https://www.felgenoutlet.de/autec_astana_schwarz-poliert.html",label:"Felgenoutlet — Autec Astana product page (specs + customer configurations)",isG30:false}]
   },
@@ -368,7 +343,6 @@ window.WHEELS = [
     blurb:"CVR1\u2019s multi-spoke sibling: ten slim stepped spokes running out to a concave edge. Same made-to-order offsets, dressier face — the CVR for people who find mesh too busy.",
     finishes:[{name:"Carbon Graphite",face:"#4a4d52"},{name:"Brushed Titanium",face:"#9c948a"},{name:"Double Tinted Black",face:"#1e2022"}],
     url:"https://concaverwheels.com/cvr4",
-    render:{style:"multi",count:10,width:.4,concave:.5,lip:"metal"},
     photo:{src:"https://concaverwheels.com/upload/gallery_php09X7Ng1597062032.jpg", creditUrl:"https://concaverwheels.com/gallery/314", creditName:"Concaver gallery", car:"BMW 5 Series G30", isG30:true, size:"20″"},
     photoLinks:[{url:"https://concaverwheels.com/gallery/504",label:"Concaver gallery — 5 Series on CVR4",isG30:true},{url:"https://wheelfront.com/cars/bmw-5-series-black-concaver-cvr4/",label:"Black BMW 5 Series on CVR4",isG30:false}]
   },
@@ -382,7 +356,6 @@ window.WHEELS = [
     blurb:"Five wide center-split pairs that broaden toward a deeply concave lip — the boldest face in the Concaver line-up. For a G30 that should look expensive and slightly angry.",
     finishes:[{name:"Platinum Black",face:"#232528"},{name:"Carbon Graphite",face:"#4a4d52"},{name:"Gloss Bronze",face:"#8a6f4d"}],
     url:"https://concaverwheels.com/cvr5",
-    render:{style:"twin",count:5,width:.78,curve:.04,concave:.55,lip:"dark"},
     photo:{src:"https://concaverwheels.com/upload/gallery_phpYXCAyd1634587496.jpg", creditUrl:"https://concaverwheels.com/gallery/728", creditName:"Concaver vehicle gallery", car:"BMW M4 G82", isG30:false, size:"20″"},
     photoLinks:[{url:"https://concaverwheels.com/gallery/957",label:"Concaver CVR5 gallery",isG30:false},{url:"https://concaverwheels.com/blog/concaver-cvr5-with-bmw-m4",label:"CVR5 on BMW M4",isG30:false}]
   },
@@ -396,7 +369,6 @@ window.WHEELS = [
     blurb:"Five directional Y-split spokes with machined pockets — the HF-3\u2019s cleaner, more architectural brother. The 10.5J Deep Concave rear fills a G30 arch completely.",
     finishes:[{name:"Gloss Black",face:"#111214"},{name:"Matte Gunmetal",face:"#5d6167"}],
     url:"https://vossenwheels.com/wheel/hf-5/",
-    render:{style:"y",count:5,width:.75,concave:.5,lip:"dark"},
     photo:{src:"https://vossenwheels.com/wp-content/uploads/2021/05/BMW-530i-Hybrid-Forged-Series-HF-5-%C2%A9-Vossen-Wheels-2021-900-2000x1126.jpg", creditUrl:"https://vossenwheels.com/galleries/bmw-530i-hybrid-forged-series-hf-5/", creditName:"Vossen vehicle gallery", car:"BMW 530i G30", isG30:true, size:"20″"},
     photoLinks:[{url:"https://wheelfront.com/cars/bmw-5-series-530i-g30-black-vossen-hf5/",label:"530i G30 on 20″ HF-5 gloss black",isG30:true},{url:"https://vossenwheels.com/wheel/hf-5/",label:"Vossen HF-5 official gallery",isG30:false}]
   },
@@ -410,7 +382,6 @@ window.WHEELS = [
     blurb:"Split five-spoke pairs diving hard into the barrel — the LA take on concave. Gloss Gold on a black G30 is a statement few make in the Netherlands; that\u2019s the point.",
     finishes:[{name:"Matte Black",face:"#1b1c1e"},{name:"Brushed Titanium",face:"#9b948b"},{name:"Gloss Gold",face:"#b5913f"}],
     url:"https://www.rohanawheels.com",
-    render:{style:"twin",count:5,width:.64,curve:.05,concave:.6,lip:"dark"},
     photo:{src:"https://armotorwerkz.com/wp-content/uploads/2018/08/M6-7-RFX5.jpg", creditUrl:"https://g30.bimmerpost.com/forums/showthread.php?t=1526375", creditName:"AR Motorwerkz (via G30 bimmerpost thread)", car:"BMW M6 F13", isG30:false, size:""},
     photoLinks:[{url:"https://g30.bimmerpost.com/forums/showthread.php?t=1574287",label:"G30 forum — 20″ RFX5 build",isG30:true},{url:"https://wheelfront.com/cars/bmw-x5-g05-blue-rohana-rfx5/",label:"RFX5 on BMW X5",isG30:false}]
   },
@@ -424,7 +395,6 @@ window.WHEELS = [
     blurb:"Split five-spoke curving back into a stepped lip with exposed hardware — full show-car energy. Heavy and loud in every sense, but nothing else here fills arches like it.",
     finishes:[{name:"Machine Silver / Chrome Lip",face:"#c9ccd0"},{name:"Matte Black",face:"#1b1c1e"},{name:"Matte Bronze",face:"#7d603e"}],
     url:"https://ferradawheels.com",
-    render:{style:"twin",count:5,width:.72,curve:.08,concave:.5,lip:"bright"},
     photo:{src:"https://ferradawheels.com/wp-content/uploads/2023/01/2021-Mercedes-AMG-GT63s-FR2-MB-2-of-7.jpg", creditUrl:"https://ferradawheels.com/wheelsgallery/dc-series/fr2/", creditName:"Ferrada Wheels gallery", car:"Mercedes-AMG GT63 S", isG30:false, size:""},
     photoLinks:[{url:"https://audiocityusa.com/gallery/1415435/2017-BMW-5%2BSeries-Ferrada-FR2-20-inch-Wheels",label:"2017 G30 on 20″ FR2 Matte Bronze",isG30:true},{url:"https://ferradawheels.com/wheelsgallery/dc-series/fr2/",label:"Ferrada FR2 official gallery",isG30:false}]
   },
@@ -438,7 +408,6 @@ window.WHEELS = [
     blurb:"Ten filigree concave spokes on a glossy face, from the German shop behind half the stanced Audis at Wörthersee. Deep-dish look, downloadable paperwork.",
     finishes:[{name:"Matt Grey",face:"#7b7e82"},{name:"Matt Gunmetal",face:"#565a60"},{name:"Silver",face:"#b8bcc0"}],
     url:"https://www.yidoperformance.de",
-    render:{style:"multi",count:10,width:.38,concave:.55,lip:"metal"},
     photo:{src:"https://www.gt-automotive.com/bilder/popup/1600x1100/yido-yp1-20-zoll-bmw.jpg", creditUrl:"https://www.gt-automotive.com/alufelgen/galerie.php?aktiv_bildgruppe_id_sess=141", creditName:"GT-Automotive gallery", car:"BMW 5 Series Touring F11", isG30:false, size:"20″"},
     photoLinks:[{url:"https://www.ebay.de/itm/166731229733",label:"YP1 20″ set for G30/G31 (dealer photos)",isG30:true},{url:"https://www.felgenoutlet.de/yido-performance_yp1-talia_silber.html",label:"Felgenoutlet — Yido Performance YP1 Talia Silber product page",isG30:false}]
   },
@@ -452,7 +421,6 @@ window.WHEELS = [
     blurb:"A true forged wheel under €4.000 the set: milled contours, sub-10 kg fronts, German paperwork. The engineering pick — note the 20″ 5×112 line tops out at 9J wide.",
     finishes:[{name:"Gloss Grey",face:"#a7abaf"},{name:"Satin Black",face:"#222426"},{name:"Rose Gold Matt",face:"#a4795f"}],
     url:"https://mb-design.de/sf1-forged/",
-    render:{style:"double",count:10,width:.4,concave:.4,lip:"metal"},
     photo:{src:"https://r2.mbdesign.shop/cdn/width/1920/media/cb/e5/b8/1738514179/BMW-M5-G90-SF1-22zoll-LK5x132.webp?ts=1738514179", creditUrl:"https://mbdesign.shop/galerie/sf1-roh-glaenzend/10161/bmw-m-m5-g90-g9m", creditName:"mbDESIGN vehicle gallery", car:"BMW M5 G90", isG30:false, size:"22″"},
     photoLinks:[{url:"https://mbdesign.shop/galerie/sf1-roh-glaenzend/10161/bmw-m-m5-g90-g9m",label:"mbDESIGN gallery — M5 G90 on SF1",isG30:false},{url:"https://mbdesign.shop/felgen/sf1/",label:"mbDESIGN SF1 Forged — official product page",isG30:false}]
   },
@@ -466,7 +434,6 @@ window.WHEELS = [
     blurb:"Five tapered pairs split at the hub and stretched to the rim edge — the FFR6\u2019s more classic sibling, light for the money and quietly elegant in Pure Silver Brushed.",
     finishes:[{name:"Pure Silver Brushed",face:"#c2c6ca"},{name:"Carbon Graphite",face:"#4c4f54"},{name:"Matt Carbon Bronze",face:"#6e5a41"}],
     url:"https://ispiriwheels.com",
-    render:{style:"twin",count:5,width:.5,curve:.05,concave:.4,lip:"metal"},
     photo:{src:"https://wheelfront.com/wp-content/uploads/formidable/8/ffr1-ispiri-m4-wheels-2.jpg", creditUrl:"https://wheelfront.com/cars/bmw-m4-f82-f83-yellow-ispiri-ffr1/", creditName:"Wheelfront", car:"BMW M4 F82", isG30:false, size:""},
     photoLinks:[{url:"https://wheelfront.com/cars/bmw-5-series-grey-ispiri-ffr1/",label:"Grey BMW 5 Series on 20″ FFR1",isG30:false},{url:"https://cmwheels.com/products/20-ispiri-ffr1-wheels-carbon-graphite-vw-audi-mercedes-5x112/",label:"20″ FFR1 5×112 product page",isG30:false}]
   },
@@ -480,7 +447,6 @@ window.WHEELS = [
     blurb:"Ten slender milled spokes with a hard 71 mm concave sweep on the Deep Concave rears. A German stance-scene staple that stays street-legal on paper.",
     finishes:[{name:"Highgloss Black",face:"#101113"},{name:"Hyper Silver",face:"#b9bec4"},{name:"Satin Bronze",face:"#8a6b48"}],
     url:"https://www.elegance-wheels.de",
-    render:{style:"multi",count:10,width:.36,concave:.6,lip:"dark"},
     photo:{src:"https://www.elegance-wheels.de/Elegance/Fahrzeuge/BMW/BMW%20Your%20Paint/2870/image-thumb__2870__gallery_detail/BMW%20weiss%201.9e1b383c.webp", creditUrl:"https://www.elegance-wheels.de/Galerie/BMW", creditName:"Elegance Wheels gallery (HS Motorsport)", car:"BMW 5 Series F10", isG30:false, size:""},
     photoLinks:[{url:"https://www.ebay.de/itm/174149560626",label:"E1 20″ set for G30/G31 (dealer photos)",isG30:true},{url:"https://www.felgengalerie.de/felge/bmw-5er-elegancewheels-e1-schwarz-20zoll/",label:"BMW 5er on 20″ E1 black",isG30:false}]
   },
@@ -496,7 +462,6 @@ window.WHEELS = [
     blurb:"The icon. Cross-spoke mesh over a polished stepped lip, forged center bolted to a spun rim. Nothing on this page will out-class it in twenty years — because nothing has in the last thirty.",
     finishes:[{name:"Diamond Silver",face:"#c8ccd2"},{name:"Diamond Black",face:"#26282c"},{name:"Gold",face:"#b8923c"}],
     url:"https://bbs.com",
-    render:{style:"mesh",count:10,width:.3,concave:.3,lip:"bright"},
     photo:{src:"https://armotorwerkz.com/wp-content/uploads/2020/08/BMW-G30-M550i-BBS-LM-4.jpg", creditUrl:"https://armotorwerkz.com/bmw-g30-m550i-bbs-lm-5/", creditName:"AR Motorwerkz", car:"BMW M550i G30", isG30:true, size:""},
     photoLinks:[{url:"https://wheelfront.com/cars/bmw-5-series-530e-g30-black-bbs-lm/",label:"Black 530e G30 on 20″ BBS LM",isG30:true},{url:"https://baanvelgen.com/products/bbs-lm-wheels-bmw-5-series-g30-g31",label:"Baan Velgen (NL) — LM for G30/G31",isG30:true},{url:"https://g30.bimmerpost.com/forums/showthread.php?t=1698622",label:"G30 forum — LM 20″ fitment",isG30:true}]
   },
@@ -510,7 +475,6 @@ window.WHEELS = [
     blurb:"The facelift M Sport twenty: a Y-spoke in bicolor Jet Black with a burnished face. Used take-off sets make this the cheapest genuinely OEM way onto twenties — often with tires still on.",
     finishes:[{name:"Bicolor Jet Black",face:"#2b2e33"},{name:"Jet Black Matt",face:"#1a1d20"}],
     url:"https://www.bmw.nl",
-    render:{style:"y",count:10,width:.42,concave:.28,lip:"dark"},
     photo:{src:"https://mediapool.bmwgroup.com/cache/P9/202005/P90389014/P90389014-the-new-bmw-530e-xdrive-sedan-phytonic-blue-metallic-m-sport-package-05-2020-2248px.jpg", creditUrl:"https://www.press.bmwgroup.com/france/photo/detail/P90389014/The-new-BMW-530e-xDrive-Sedan-Phytonic-blue-metallic-M-Sport-package-05-2020", creditName:"BMW Group PressClub", car:"BMW 530e xDrive G30", isG30:true, size:"20″"},
     photoLinks:[{url:"https://www.press.bmwgroup.com/usa/article/detail/T0308911EN_US/the-new-2021-bmw-5-series-sedan?language=en_US",label:"BMW press — 2021 LCI on 20″ 846M",isG30:true},{url:"https://www.werksraeder24.com/bmw-sommerkomplettraeder-5er-g30-g31-20-zoll-styling-846-m-y-speiche-wr0140000.html",label:"Werksrader24 (DE) — genuine 846M 20″ complete wheel sets for G30/G31",isG30:true}]
   },
@@ -524,7 +488,6 @@ window.WHEELS = [
     blurb:"The legendary 20-spoke, forged and factory-fitted to the Alpina B5. Twenty fine radial spokes running into the lip — instant Buchloe gravitas, and used sets surface regularly.",
     finishes:[{name:"Alpina Silver",face:"#c9ccd1"},{name:"Black (D5 S)",face:"#1e2124"}],
     url:"https://www.alpina-automobiles.com",
-    render:{style:"multi",count:20,width:.3,concave:.22,lip:"bright"},
     photo:{src:"https://images.collectingcars.com/065135/-BMW-Alpina-B5-Touring-Photo-Max-Earey-013.jpg?w=1920&q=85", creditUrl:"https://collectingcars.com/for-sale/2018-bmw-alpina-g31-b5-touring-1", creditName:"Collecting Cars (photo Max Earey)", car:"BMW Alpina B5 Touring (G31)", isG30:true, size:"20″"},
     photoLinks:[{url:"https://commons.wikimedia.org/wiki/Category:Alpina_B5_(G30)",label:"Wikimedia Commons — Alpina B5 (G30) photos",isG30:true},{url:"https://collectingcars.com/for-sale/2018-bmw-alpina-g31-b5-touring-1",label:"Alpina B5 Touring G31 auction gallery",isG30:true}]
   },
@@ -538,7 +501,6 @@ window.WHEELS = [
     blurb:"Ten slim milled spoke pairs in bi-color — Aachen\u2019s technical flagship. The forged construction and papers justify the price; the look justifies the badge on the trunk.",
     finishes:[{name:"BiColor Silver",face:"#9aa0a8"},{name:"Anthracite",face:"#4a4e54"}],
     url:"https://www.ac-schnitzer.de/en/bmw/8-1/5/5er-g30g31/wheels/",
-    render:{style:"double",count:10,width:.38,concave:.3,lip:"metal"},
     photo:{src:"https://cdn.bimmertoday.de/wp-content/uploads/2020/03/AC-Schnitzer-AC3-Flowforming-Tuning-Felgen-21-Zoll-BMW-5er-Touring-G31.jpg", creditUrl:"https://www.bimmertoday.de/2020/03/05/ac-schnitzer-ac3-neue-21-zoll-tuning-felgen-fur-viele-bmw/", creditName:"BimmerToday", car:"BMW 5 Series Touring G31", isG30:true, size:"21″"},
     photoLinks:[{url:"https://www.ac-schnitzer.de/en/bmw/8-1/5/5er-g30g31/wheels/",label:"AC Schnitzer G30/G31 program (on-car)",isG30:true},{url:"https://www.acschnitzer-us.com/customer-gallery-ac-schnitzer-5-series-g30/cgk872",label:"Customer gallery — 5 Series G30",isG30:true}]
   },
@@ -552,7 +514,6 @@ window.WHEELS = [
     blurb:"Ten pairs of ultra-thin forged spokes from the people who make 800 hp 5 Series daily drivers. Aerospace aluminium, motorsport-light, priced accordingly.",
     finishes:[{name:"Jet Black Matt",face:"#1c1e21"},{name:"Silver Brushed",face:"#b6bac0"}],
     url:"https://www.g-power.com",
-    render:{style:"twin",count:10,width:.34,concave:.35,lip:"dark"},
     photo:{src:"https://www.tuningblog.eu/wp-content/uploads/2018/02/21-Zoll-Chiptuning-G-POWER-BMW-540i-xDrive-G31-Tuning-1.jpg", creditUrl:"https://www.tuningblog.eu/dies-u-das/gpower-bmw-540i-xdrive-g31-186135/", creditName:"tuningblog.eu", car:"BMW 540i xDrive Touring G31", isG30:true, size:"21″"},
     photoLinks:[{url:"https://www.g-power.com/en/configurator/bmw-1/5-series-7d/5-series-g30-g31-2017-83/forged-wheel-hurricane-rr-9-0-x-20-5-series-g3x-2dd",label:"G-Power configurator — RR 20″ for G30/G31",isG30:true},{url:"https://www.tuningblog.eu/dies-u-das/gpower-bmw-540i-xdrive-g31-186135/",label:"540i G31 on Hurricane RR (21″ shown)",isG30:true}]
   },
@@ -566,7 +527,6 @@ window.WHEELS = [
     blurb:"Five curved Y-split spokes with rounded edges and a deep concave rear — Californian softness where most concave wheels go sharp. Carbon Graphite suits every G30 color.",
     finishes:[{name:"Carbon Graphite",face:"#5a5f66"},{name:"Mercury Silver",face:"#b9bec5"}],
     url:"https://vorsteiner.com",
-    render:{style:"y",count:5,width:.7,concave:.45,lip:"dark"},
     photo:{src:"https://wheelfront.com/wp-content/uploads/2024/04/BMW-5-Series-G30-Vorsteiner-V-FF-103-wheels-1.jpg", creditUrl:"https://wheelfront.com/cars/bmw-5-series-520d-g30-red-vorsteiner-v-ff-103/", creditName:"Wheelfront", car:"BMW 520d G30", isG30:true, size:""},
     photoLinks:[{url:"https://wheelfront.com/aftermarket-wheels-gallery/?fwheel=Vorsteiner&fwheelmodel=V-FF+103",label:"Red G30 on 20″ V-FF 103",isG30:true},{url:"https://modbargains.com/vorsteiner-v-ff-103-wheels-for-g30-5-series-20-5x112/",label:"ModBargains — V-FF 103 for G30 5-Series, 20″ 5x112",isG30:true}]
   },
@@ -580,7 +540,6 @@ window.WHEELS = [
     blurb:"Five broad machined double spokes with an exposed-lug motorsport face — the FF10\u2019s muscular brother. The wheel for a G30 that wants to look like it does track days.",
     finishes:[{name:"Liquid Metal",face:"#a7abb1"},{name:"Tarmac",face:"#3b3e43"}],
     url:"https://hrewheels.com",
-    render:{style:"double",count:5,width:.68,concave:.35,lip:"metal"},
     photo:{src:"https://www.autofuturedesign.com.my/v3/wp-content/uploads/2018/09/G30-FF04-5.jpg", creditUrl:"https://www.autofuturedesign.com.my/v3/bmw-5-series-540i-on-a-set-of-hre-performance-flowform-ff04-wheels/", creditName:"Autofuture Design (Malaysia)", car:"BMW 540i G30", isG30:true, size:""},
     photoLinks:[{url:"https://wheelfront.com/cars/bmw-5-series-540i-g30-blue-with-hre-ff04-aftermarket-wheels/bmw-g30-5series-with-hre-ff04-wheels-1-jpg/",label:"Blue 540i G30 on FF04",isG30:true},{url:"https://www.autofuturedesign.com.my/v3/bmw-5-series-540i-on-a-set-of-hre-performance-flowform-ff04-wheels/",label:"Autofuture Design (MY) — 540i G30 on HRE FlowForm FF04",isG30:true}]
   },
@@ -594,7 +553,6 @@ window.WHEELS = [
     blurb:"Ten slender elongated spokes with cast side-cuts that visually enlarge the wheel. The grand-touring OZ — same racing bloodline as the Ultraleggera, tailored for big sedans.",
     finishes:[{name:"Star Graphite Machined",face:"#4b4f55"},{name:"Star Graphite Diamond Lip",face:"#585c62"}],
     url:"https://www.ozracing.com/alloy-wheels/oz-racing/i-tech/gran-turismo-hlt",
-    render:{style:"multi",count:10,width:.38,concave:.3,lip:"metal"},
     photo:{src:"https://www.ozracing.com/images/products/wheels/GranTurismo-HLT/Gran-Turismo-HLT_cover_website.jpg", creditUrl:"https://www.ozracing.com/alloy-wheels/oz-racing/i-tech/gran-turismo-hlt", creditName:"OZ Racing (official)", car:"Audi A5 Sportback", isG30:false, size:""},
     photoLinks:[{url:"https://www.ozracing.com/alloy-wheels/oz-racing/i-tech/gran-turismo-hlt",label:"OZ official — GT HLT on-car gallery",isG30:false},{url:"https://fullcartuning.com/80916-oz-racing-gran-turismo-hlt-wheels-20-inch-9j-et25-5x112-star-graphite-machined",label:"Fullcartuning NL — 20×9 ET25 5×112",isG30:false}]
   },
@@ -608,7 +566,6 @@ window.WHEELS = [
     blurb:"Fifteen slim endurance-racing spokes with deep staggered concavity, under 10 kg up front. The best weight-per-euro ratio in this catalog.",
     finishes:[{name:"Gloss Gunmetal",face:"#575b60"},{name:"Silver Mirror Cut",face:"#c3c7cd"},{name:"Gloss Black",face:"#1d2023"}],
     url:"https://www.tsw.com/tsw-bathurst",
-    render:{style:"multi",count:15,width:.34,concave:.4,lip:"metal"},
     photo:{src:"https://s7d9.scene7.com/is/image/wheelpros/tsw-bathhurst-silver%20with%20mirror%20cut%20face-20x9-20x10-2016%20bmw%205%20series%203?wid=1600", creditUrl:"https://www.tsw.com/tsw-bathurst-2016-bmw-m5-24", creditName:"TSW official vehicle gallery", car:"BMW M5 F10", isG30:false, size:"20″"},
     photoLinks:[{url:"https://www.tsw.com/tsw-bathurst-2016-bmw-m5-24",label:"BMW M5 on silver Bathurst",isG30:false},{url:"https://www.tsw.com/tsw-bathurst",label:"TSW official vehicle gallery",isG30:false}]
   },
@@ -622,7 +579,6 @@ window.WHEELS = [
     blurb:"Compound-concave five-spoke with a milled vent slot per spoke and exposed lugs. The accessible US-street look — just know it\u2019s the heaviest wheel in this catalog.",
     finishes:[{name:"Matte Black",face:"#1e2125"},{name:"Anthracite Brushed",face:"#4e5359"}],
     url:"https://www.nicheroadwheels.com/niche-1pc-teramo",
-    render:{style:"double",count:5,width:.6,curve:.05,concave:.45,lip:"dark"},
     photo:{src:"https://s7d9.scene7.com/is/image/wheelpros/niche-teramo-m269-20x9.5-20x11-matte%20black-2021%20chevrolet%20camaro%201?wid=1600", creditUrl:"https://www.nicheroadwheels.com/niche-1pc-teramo", creditName:"Niche Road Wheels (official)", car:"Chevrolet Camaro RS", isG30:false, size:"20″"},
     photoLinks:[{url:"https://www.nicheroadwheels.com/niche-1pc-teramo",label:"Niche official — Teramo on-car shots",isG30:false},{url:"https://www.powerhousewheels.com/shop/niche-m269-teramo-matte-black/",label:"Teramo M269 gallery",isG30:false}]
   }
